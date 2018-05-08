@@ -34,47 +34,47 @@ do
      {
            '1' {
                 cls
-               [System.Diagnostics.Process]::Start("chrome.exe","https://api.hackertarget.com/mtr/?q=$search")
+               [System.Diagnostics.Process]::Start("https://api.hackertarget.com/mtr/?q=$search")
                 cls
            } '2' {
                 cls
-                [System.Diagnostics.Process]::Start("chrome.exe","https://api.hackertarget.com/nping/?q=$search")
+                [System.Diagnostics.Process]::Start("https://api.hackertarget.com/nping/?q=$search")
                 cls
            } '3' {
                 cls
-                [System.Diagnostics.Process]::Start("chrome.exe","https://api.hackertarget.com/dnslookup/?q=$search")
+                [System.Diagnostics.Process]::Start("https://api.hackertarget.com/dnslookup/?q=$search")
                 cls
            } 
              '4' {
                 cls
-                [System.Diagnostics.Process]::Start("chrome.exe","https://api.hackertarget.com/hostsearch/?q=$search")
+                [System.Diagnostics.Process]::Start("https://api.hackertarget.com/hostsearch/?q=$search")
                 cls
            } '5' {
                 cls
-                [System.Diagnostics.Process]::Start("chrome.exe","https://api.hackertarget.com/reversedns/?q=$search")
+                [System.Diagnostics.Process]::Start("https://api.hackertarget.com/reversedns/?q=$search")
                 cls
            }
              '6' {
                 cls
-                 [System.Diagnostics.Process]::Start("chrome.exe","https://api.hackertarget.com/whois/?q=$search")
+                 [System.Diagnostics.Process]::Start("https://api.hackertarget.com/whois/?q=$search")
                  cls
            } '7' {
                 cls
-                [System.Diagnostics.Process]::Start("chrome.exe","https://api.hackertarget.com/geoip/?q=$search")
+                [System.Diagnostics.Process]::Start("https://api.hackertarget.com/geoip/?q=$search")
                 cls
            }
              '8' {
                 cls
-                 [System.Diagnostics.Process]::Start("chrome.exe","https://api.hackertarget.com/reverseiplookup/?q=$search")
+                 [System.Diagnostics.Process]::Start("https://api.hackertarget.com/reverseiplookup/?q=$search")
                  cls
            } '9' {
                 cls
-                [System.Diagnostics.Process]::Start("chrome.exe","https://api.hackertarget.com/httpheaders/?q=$search")
+                [System.Diagnostics.Process]::Start("https://api.hackertarget.com/httpheaders/?q=$search")
                 cls
            }
            '10' {
                 cls
-                [System.Diagnostics.Process]::Start("chrome.exe","https://api.hackertarget.com/pagelinks/?q=$search")
+                [System.Diagnostics.Process]::Start("https://api.hackertarget.com/pagelinks/?q=$search")
                 cls
            }
            'q' {
