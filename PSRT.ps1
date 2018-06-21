@@ -43,59 +43,58 @@ do
                 cls
            } '2' {
                 cls
-              Invoke-Restmethod -uri https://api.hackertarget.com/mtr/?q=$search | out-file testping.txt
+              Invoke-Restmethod -uri https://api.hackertarget.com/nping/?q=$search | out-file testping.txt
                 cls
            } '3' {
                 cls
-              Invoke-Restmethod -uri https://api.hackertarget.com/mtr/?q=$search | out-file Dnslookup.txt
+              Invoke-Restmethod -uri https://api.hackertarget.com/dnslookup/?q=$search | out-file Dnslookup.txt
                 cls
            } 
              '4' {
                 cls
-              Invoke-Restmethod -uri https://api.hackertarget.com/mtr/?q=$serch | out-file DNShostrecords.txt
+              Invoke-Restmethod -uri https://api.hackertarget.com/hostsearch/?q=$search | out-file DNShostrecords.txt
                 cls
            } '5' {
                 cls
-              Invoke-Restmethod -uri https://api.hackertarget.com/mtr/?q=$search | out-file reversedns.txt
+              Invoke-Restmethod -uri https://api.hackertarget.com/reversedns/?q=$search | out-file reversedns.txt
                 cls
            }
              '6' {
                 cls
-              Invoke-Restmethod -uri https://api.hackertarget.com/mtr/?q=$search | out-file whoislookup.txt
+              Invoke-Restmethod -uri https://api.hackertarget.com/whois/?q=$search | out-file whoislookup.txt
                  cls
            } '7' {
                 cls
-              Invoke-Restmethod -uri https://api.hackertarget.com/mtr/?q=$search | out-file geoip.txt
+              Invoke-Restmethod -uri https://api.hackertarget.com/geoip/?q=$search | out-file geoip.txt
                 cls
            }
              '8' {
                 cls
-              Invoke-Restmethod -uri https://api.hackertarget.com/mtr/?q=$search | out-file reverseip.txt
+              Invoke-Restmethod -uri https://api.hackertarget.com/reverseiplookup/?q=$search | out-file reverseip.txt
                  cls
            } '9' {
                 cls
-              Invoke-Restmethod -url https://api.hackertarget.com/mtr/?q=$search | out-file headercheck.txt
+              Invoke-Restmethod -url https://api.hackertarget.com/httpheaders/?q=$search | out-file headercheck.txt
                 cls
            }
            '10' {
                 cls
-              Invoke-Restmethod –url https://api.hackertarget.com/mtr/?q=$search | out-file extractlink.txt
+              Invoke-Restmethod –url https://api.hackertarget.com/pagelinks/?q=$search | out-file extractlink.txt
                 cls
            }
 
            '11' {
                 cls
               Invoke-Restmethod -uri https://api.hackertarget.com/mtr/?q=$search | out-file Tracert.txt
-              Invoke-Restmethod -uri https://api.hackertarget.com/mtr/?q=$search | out-file testping.txt
-              Invoke-Restmethod -uri https://api.hackertarget.com/mtr/?q=$search | out-file Dnslookup.txt
-              Invoke-Restmethod -uri https://api.hackertarget.com/mtr/?q=$serch | out-file DNShostrecords.txt
-              Invoke-Restmethod -uri https://api.hackertarget.com/mtr/?q=$search | out-file reversedns.txt
-              Invoke-Restmethod -uri https://api.hackertarget.com/mtr/?q=$search | out-file whoislookup.txt
-              Invoke-Restmethod -uri https://api.hackertarget.com/mtr/?q=$search | out-file geoip.txt
-              Invoke-Restmethod -uri https://api.hackertarget.com/mtr/?q=$search | out-file reverseip.txt
-              Invoke-Restmethod -url https://api.hackertarget.com/mtr/?q=$search | out-file headercheck.txt
-              Invoke-Restmethod –url https://api.hackertarget.com/mtr/?q=$search | out-file extractlink.txt
-
+              Invoke-Restmethod -uri https://api.hackertarget.com/nping/?q=$search | out-file testping.txt
+              Invoke-Restmethod -uri https://api.hackertarget.com/dnslookup/?q=$search | out-file Dnslookup.txt
+              Invoke-Restmethod -uri https://api.hackertarget.com/hostsearch/?q=$search | out-file DNShostrecords.txt
+              Invoke-Restmethod -uri https://api.hackertarget.com/reversedns/?q=$search | out-file reversedns.txt
+              Invoke-Restmethod -uri https://api.hackertarget.com/whois/?q=$search | out-file whoislookup.txt
+              Invoke-Restmethod -uri https://api.hackertarget.com/geoip/?q=$search | out-file geoip.txt
+              Invoke-Restmethod -uri https://api.hackertarget.com/reverseiplookup/?q=$search | out-file reverseip.txt
+              Invoke-Restmethod -url https://api.hackertarget.com/httpheaders/?q=$search | out-file headercheck.txt
+              Invoke-Restmethod –url https://api.hackertarget.com/pagelinks/?q=$search | out-file extractlink.txt
                 cls
            }
            'q' {
