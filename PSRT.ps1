@@ -34,47 +34,59 @@ do
      {
            '1' {
                 cls
-               [System.Diagnostics.Process]::Start("https://api.hackertarget.com/mtr/?q=$search")
+
+            [System.Diagnostics.Process]::Start("https://api.hackertarget.com/mtr/?q=$search")
+              Invoke-Restmethod -uri https://api.hackertarget.com/mtr/?q=$search | out-file Tracert.csv
+
                 cls
            } '2' {
                 cls
                 [System.Diagnostics.Process]::Start("https://api.hackertarget.com/nping/?q=$search")
+              Invoke-Restmethod -uri https://api.hackertarget.com/mtr/?q=$search | out-file testping.csv
                 cls
            } '3' {
                 cls
                 [System.Diagnostics.Process]::Start("https://api.hackertarget.com/dnslookup/?q=$search")
+              Invoke-Restmethod -uri https://api.hackertarget.com/mtr/?q=$search | out-file Dnslookup.csv
                 cls
            } 
              '4' {
                 cls
                 [System.Diagnostics.Process]::Start("https://api.hackertarget.com/hostsearch/?q=$search")
+              Invoke-Restmethod -uri https://api.hackertarget.com/mtr/?q=$serch | out-file DNShostrecords.csv
                 cls
            } '5' {
                 cls
                 [System.Diagnostics.Process]::Start("https://api.hackertarget.com/reversedns/?q=$search")
+              Invoke-Restmethod -uri https://api.hackertarget.com/mtr/?q=$search | out-file reversedns.csv
                 cls
            }
              '6' {
                 cls
                  [System.Diagnostics.Process]::Start("https://api.hackertarget.com/whois/?q=$search")
+              Invoke-Restmethod -uri https://api.hackertarget.com/mtr/?q=$search | out-file whoislookup.csv
                  cls
            } '7' {
                 cls
                 [System.Diagnostics.Process]::Start("https://api.hackertarget.com/geoip/?q=$search")
+              Invoke-Restmethod -uri https://api.hackertarget.com/mtr/?q=$search | out-file geoip.csv
                 cls
            }
              '8' {
                 cls
                  [System.Diagnostics.Process]::Start("https://api.hackertarget.com/reverseiplookup/?q=$search")
+              Invoke-Restmethod -uri https://api.hackertarget.com/mtr/?q=$search | out-file reverseip.csv
                  cls
            } '9' {
                 cls
                 [System.Diagnostics.Process]::Start("https://api.hackertarget.com/httpheaders/?q=$search")
+              Invoke-Restmethod -url https://api.hackertarget.com/mtr/?q=$search | out-file headercheck.csv
                 cls
            }
            '10' {
                 cls
                 [System.Diagnostics.Process]::Start("https://api.hackertarget.com/pagelinks/?q=$search")
+              Invoke-Restmethod –url https://api.hackertarget.com/mtr/?q=$search | out-file extractlink.csv
                 cls
            }
            'q' {
